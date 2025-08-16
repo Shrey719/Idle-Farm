@@ -1,6 +1,6 @@
 {
-  "name": "rspack-vanilla-starter",
-  "private": true,
+  "name": "idle-farm",
+  "private": false,
   "version": "1.0.0",
   "scripts": {
     "dev": "rspack dev",

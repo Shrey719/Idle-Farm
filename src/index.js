@@ -1,8 +1,14 @@
 import "./index.css";
+import "./mote/main.js"
+import initGame from "./app.js"
 
-document.querySelector("#root").innerHTML = `
-<div class="content">
-  <h1>Vanilla Rspack</h1>
-  <p>Start building amazing things with Rspack.</p>
-</div>
-`;
+window.gameState = localStorage.getItem("game") || {
+  garden: {
+    cost: 0
+  },
+  buildings: {},
+  modifiers: {},
+  balance: 0,
+}
+
+document.querySelector("#root").append(initGame())
